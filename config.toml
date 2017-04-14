@@ -1,3 +1,8 @@
 baseURL = "http://onetwenty.fit/"
 languageCode = "en-gb"
 title = "onetwenty"
+theme = "onetwenty"
+
+[params]
+    phoneNumber = "07958 123 747"
+    email = "hello@onetwenty.fit"

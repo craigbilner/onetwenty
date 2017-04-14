@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ .Site.Title }}</title>
+    <link rel="stylesheet" href="/css/skeleton.css">
+</head>
+<body>
+<div class="m-50">
+    <header class="flex flex-1 flex-end pr-100">
+        <a href="/about" class="green no-decoration bold uppercase">about</a>
+        <div class="ml-10 gray bold">{{ .Site.Params.phoneNumber }}</div>
+    </header>
+    <section class="mtb-50">
+        {{ partial "logo-large-with-text" . }}
+    </section>
+    <section>
+        <div class="hero-image flex flex-column flex-spaced flex-align-center ptb-40">
+            <div class="font-xl white uppercase">coming soon</div>
+            <div class="font-l white">
+                <div class="align-centre">
+                    for more info please visit our
+                </div>
+                <div class="align-centre uppercase">
+                    <a href="https://www.facebook.com/onetwenty.fit" class="white">facebook page</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="align-right p-25 pr-100 bold gray font-s">
+        {{ .Site.Params.email }}
+    </section>
+</div>
+<footer class="bg-green flex flex-1 h-100"></footer>
+</body>
+</html>

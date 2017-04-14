@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+html, body {
+    height: 100%;
+}
+
+/* dimensions */
+
+.h-25 {
+    height: 25px;
+}
+
+.h-100 {
+    height: 100px;
+}
+
+.w-500 {
+    width: 500px;
+}
+
+/* spacing */
+
+.m-50 {
+    margin: 50px;
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+
+.mr-20 {
+    margin-right: 20px;
+}
+
+.mtb-50 {
+    margin: 50px 0;
+}
+
+.p-25 {
+    padding: 25px;
+}
+
+.pl-30 {
+    padding-left: 30px;
+}
+
+.pr-100 {
+    padding-right: 100px;
+}
+
+.pt-45 {
+    padding-top: 45px;
+}
+
+.ptb-40 {
+    padding: 40px 0;
+}
+
+/* flex */
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-flow: column;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.flex-spaced {
+    justify-content: space-between;
+}
+
+.flex-align-center {
+    align-items: center;
+}
+
+/* fonts */
+
+.font-xxl {
+    font-size: 10rem;
+}
+
+.font-xl {
+    font-size: 6rem;
+}
+
+.font-l {
+    font-size: 3rem;
+}
+
+.font-m {
+    font-size: 2rem;
+}
+
+.font-s {
+    font-size: 1.25rem;
+}
+
+.font-light {
+    font-weight: 200;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* text */
+
+.no-decoration {
+    text-decoration: none;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-centre {
+    text-align: center;
+}
+
+/* colours */
+
+.green {
+    color: #58D1CA;
+}
+
+.gray {
+    color: #a0a0a0;
+}
+
+.white {
+    color: white;
+}
+
+.bg-green {
+    background-color: rgba(62, 194, 186, 1);
+}
+
+/* position */
+
+.absolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+
+/* special */
+
+.logo-large {
+    font-size: 4.5rem;
+    color: #d3d7da;
+}
+
+.hero-image {
+    background-image: url("../images/home-hero.webp");
+    height: 400px;
+}
+
+.logo-icon {
+    top: 0;
+    left: 0;
+    position: absolute;
+}
