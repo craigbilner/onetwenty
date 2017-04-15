@@ -1,0 +1,226 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+/* dimensions */
+
+.full-hw {
+    height: 100%;
+    width: 100%;
+}
+
+/* spacing */
+
+.m-10 {
+    margin: 10px;
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+
+.pt-10 {
+    padding-top: 10px;
+}
+
+.ptb-40 {
+    padding: 40px 0;
+}
+
+/* flex */
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-flow: column;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.flex-spaced {
+    justify-content: space-between;
+}
+
+.flex-align-center {
+    align-items: center;
+}
+
+/* fonts */
+
+.font-light {
+    font-weight: 200;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* text */
+
+.no-decoration {
+    text-decoration: none;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.align-centre {
+    text-align: center;
+}
+
+/* colours */
+
+.green {
+    color: #58D1CA;
+}
+
+.gray {
+    color: #a0a0a0;
+}
+
+.white {
+    color: white;
+}
+
+/* position */
+
+.absolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+
+.to-tl {
+    transform-origin: top left;
+}
+
+/* special */
+
+.logo {
+    color: #d3d7da;
+    height: 100px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.logo-text {
+    position: absolute;
+    top: 30px;
+    left: 22px;
+}
+
+.logo-one {
+    font-size: 2rem;
+    margin-right: 20px;
+}
+
+.logo-twenty {
+    font-size: 2rem;
+}
+
+.logo-desc {
+    position: absolute;
+    bottom: 0;
+    left: 110px;
+}
+
+.logo-icon {
+    top: 0;
+    left: 0;
+    position: absolute;
+    transform: scale(0.5);
+}
+
+.hero-image {
+    background-image: url("../images/home-hero.webp");
+    height: 400px;
+}
+
+.hero-font-xl {
+    font-size: 3rem;
+}
+
+.hero-font-l {
+    font-size: 2rem;
+}
+
+.footer-email {
+    height: 40px;
+    text-align: right;
+    padding: 10px;
+}
+
+header {
+    padding-right: 10px;
+}
+
+@media (min-width: 768px) {
+    .content {
+        height: calc(100vh - 50px);
+        min-height: 635px;
+    }
+
+    .logo {
+        margin-left: 50px;
+        height: 150px;
+    }
+
+    .logo-icon {
+        transform: scale(0.75);
+    }
+
+    .logo-text {
+        top: 40px;
+        left: 32px;
+    }
+
+    .logo-one {
+        font-size: 3rem;
+        margin-right: 40px;
+    }
+
+    .logo-twenty {
+        font-size: 3rem;
+    }
+
+    .logo-desc {
+        left: 175px;
+        top: 90px;
+    }
+
+    .hero-font-xl {
+        font-size: 6rem;
+    }
+
+    .hero-font-l {
+        font-size: 3rem;
+    }
+
+    .footer-email {
+        padding-right: 50px;
+    }
+
+    header {
+        padding-right: 50px;
+    }
+
+    footer {
+        background-color: #3EC2BA;
+        width: 100%;
+        height: 50px;
+    }
+}

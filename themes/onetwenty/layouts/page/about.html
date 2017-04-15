@@ -1,10 +1,355 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="full-hw">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ .Site.Title }}</title>
+    <link rel="stylesheet" href="./css/skeleton-home.css">
 </head>
 <body>
-About
+<div class="content">
+    <header class="flex flex-1 flex-end pt-10">
+        <a href="/about" class="green no-decoration bold uppercase">about</a>
+        <div class="ml-10 gray bold">{{ .Site.Params.phoneNumber }}</div>
+    </header>
+    <section class="m-10">
+        {{ partial "logo-with-text" . }}
+    </section>
+    <section>
+        <div class="hero-image flex flex-column flex-spaced flex-align-center ptb-40 align-centre">
+            <div class="hero-font-xl white uppercase">coming soon</div>
+            <div class="hero-font-l white">
+                <div class="align-centre">
+                    for more info please visit our
+                </div>
+                <div class="align-centre uppercase">
+                    <a href="https://www.facebook.com/onetwenty.fit" class="white">facebook page</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <img src="./images/lunge.webp" alt="lunge">
+        <h1>About Us</h1>
+        <div>At One Twenty, we offer bespoke personal training in a variety of fitness disciplines. Our experienced
+            trainers will get you into shape, whether your goal is to shed a few pounds, tone up or get fitter and
+            stronger.
+        </div>
+    </section>
+    <section>
+        <img src="./images/kettle-bells.webp" alt="kettle bells">
+        <h1 class="uppercase">timetable</h1>
+        <div class="timetable">
+            <div class="timetable-times">
+                <div>
+                    08:45
+                </div>
+                <div>
+                    09:45
+                </div>
+                <div>
+                    11:00
+                </div>
+                <div>
+                    18:30
+                </div>
+                <div>
+                    19:30
+                </div>
+            </div>
+            <div class="timetable-day">
+                <div>
+                    monday
+                </div>
+                <div>
+                    group training
+                </div>
+                <div>
+                    group training
+                </div>
+                <div></div>
+                <div>
+                    group training
+                </div>
+                <div>
+                    group training
+                </div>
+            </div>
+            <div class="timetable-day">
+                <div>
+                    tuesday
+                </div>
+                <div>
+                    group training
+                </div>
+                <div>
+                    group training
+                </div>
+                <div></div>
+                <div>
+                    group training
+                </div>
+                <div>
+                    group training
+                </div>
+            </div>
+            <div class="timetable-day">
+                <div>
+                    wednesday
+                </div>
+                <div>
+                    group training
+                </div>
+                <div>
+                    group training
+                </div>
+                <div>
+                    HiiT& Core (STARTS 26.04.17)
+                </div>
+                <div>
+                    group training
+                </div>
+                <div>
+                    group training
+                </div>
+            </div>
+            <div class="timetable-day">
+                <div>
+                    thursday
+                </div>
+                <div>
+                    group training
+                </div>
+                <div>
+                    group training
+                </div>
+                <div></div>
+                <div>
+                    group training
+                </div>
+                <div>
+                    group training
+                </div>
+            </div>
+            <div class="timetable-day">
+                <div>
+                    friday
+                </div>
+                <div>
+                    group training
+                </div>
+                <div>
+                    group training
+                </div>
+                <div>
+                    yoga (monthly)
+                </div>
+                <div>
+
+                </div>
+                <div>
+
+                </div>
+            </div>
+            <div class="timetable-day">
+                <div>
+                    saturday
+                </div>
+                <div>
+
+                </div>
+                <div>
+                    group training
+                </div>
+                <div></div>
+                <div>
+
+                </div>
+                <div>
+
+                </div>
+            </div>
+            <div class="timetable-day">
+                <div>
+                    sunday
+                </div>
+                <div>
+
+                </div>
+                <div>
+
+                </div>
+                <div></div>
+                <div>
+
+                </div>
+                <div>
+
+                </div>
+            </div>
+        </div>
+        <div>
+            Our Yoga and Hiit & Core classes are open to members and non-members. Personal training is also available,
+            contact us to book your session
+        </div>
+    </section>
+    <section>
+        <h1>
+            meet our team
+        </h1>
+        <div>
+            <img src="./images/helena.webp">
+            <a src="/people/helena">helena</a>
+        </div>
+        <div>
+            <img src="./images/simon.webp">
+            <a src="/people/simon">simon</a>
+        </div>
+        <div>
+            <img src="./images/claire.webp">
+            <a src="/people/claire">claire</a>
+        </div>
+    </section>
+    <section>
+        <h1>
+            personalised group training
+        </h1>
+        <h3>
+            How it works
+        </h3>
+        <div>
+            Our programmes target the strengths and weakness of each individuals physical health, through twenty
+            different types of fitness and training styles. These is very important when it comes to functional
+            training as they all have a crossover with everyday life.
+        </div>
+        <div>
+            Everyone has different and specific fitness goals, so when you train with us, our broad programming will
+            ensure you achieve your targets, no matter your level of fitness or current ability.
+        </div>
+        <h3>
+            Our workouts include:
+        </h3>
+    </section>
+    <section>
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 viewBox="-1 3.5999984741210938 202.00001525878906 193.70001220703125"
+                 preserveAspectRatio="xMidYMid meet" style="stroke-width: 0px;">
+                <g>
+                    <path d="M40.5 196.6c-2.5 0-5-.8-7.2-2.4-4.3-3.1-6-8.4-4.4-13.5l15-53.3c.8-2.5 0-5-2-6.5l-37-28.6C.7 89.2-1 83.9.6 78.9c1.6-5 6-8.2 11.1-8.3l52-7c2.4 0 4.6-1.6 5.4-3.9l19.5-48.1c1.5-4.8 6-8 11.4-8 5.3 0 9.7 3.2 11.4 8.1l19.9 47.6c.9 2.7 3 4.2 5.5 4.2h.5l50.9 6c5.2.1 9.6 3.4 11.2 8.3 1.6 5.1-.1 10.4-4.4 13.5l-40.4 30.6c-2 1.5-2.9 4-2.1 6.3l17.8 52.5c1.7 5.1-.1 10.4-4.4 13.5-4.2 3.1-9.7 3.1-14 .1L101.8 165c-2-1.4-4.6-1.4-6.6 0l-48 29.3c-2 1.5-4.3 2.3-6.7 2.3zm66.2-38.7l50.1 29.3c1.9 1.4 3.5.3 4 0s2-1.6 1.2-3.8l-17.8-52.5c-1.9-6 .1-12.4 5.2-16l40.4-30.6c1.9-1.4 1.5-3.3 1.3-3.9-.2-.6-.9-2.4-3.3-2.4h-.5l-50.9-6c-6.1-.1-11.4-4-13.3-9.9l-19.9-47.7c-.7-2.2-2.7-2.4-3.3-2.4-.6 0-2.5.2-3.3 2.4L77.2 62.6c-1.8 5.5-7.1 9.4-13.2 9.6l-52 7c-2.3 0-3.1 1.8-3.3 2.4-.2.6-.6 2.5 1.2 3.8L47.1 114c4.9 3.6 7 10 5.1 15.9l-15 53.3c-.8 2.4.7 3.6 1.2 4 .5.3 2.2 1.4 4 0l48-29.3c4.7-3.4 11.3-3.5 16.3 0z"></path>
+                </g>
+            </svg>
+            <h1>tabata</h1>
+            <div>
+                Tabata is a high-intensity interval training (HIIT), and each exercise in a given workout only lasts
+                four minutes. A workout could look a bit like this:
+            </div>
+            <ul>
+                <li>
+                    Workout hard for 20 seconds
+                </li>
+                <li>
+                    Rest for 10 seconds
+                </li>
+                <li>
+                    Complete 8 rounds
+                </li>
+            </ul>
+            <div>
+                You push yourself as hard as you can for 20 seconds and rest for 10 seconds. This is one set.
+                You'll complete eight sets of each exercise.
+            </div>
+        </div>
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 viewBox="-1 3.5999984741210938 202.00001525878906 193.70001220703125"
+                 preserveAspectRatio="xMidYMid meet" style="stroke-width: 0px;">
+                <g>
+                    <path d="M40.5 196.6c-2.5 0-5-.8-7.2-2.4-4.3-3.1-6-8.4-4.4-13.5l15-53.3c.8-2.5 0-5-2-6.5l-37-28.6C.7 89.2-1 83.9.6 78.9c1.6-5 6-8.2 11.1-8.3l52-7c2.4 0 4.6-1.6 5.4-3.9l19.5-48.1c1.5-4.8 6-8 11.4-8 5.3 0 9.7 3.2 11.4 8.1l19.9 47.6c.9 2.7 3 4.2 5.5 4.2h.5l50.9 6c5.2.1 9.6 3.4 11.2 8.3 1.6 5.1-.1 10.4-4.4 13.5l-40.4 30.6c-2 1.5-2.9 4-2.1 6.3l17.8 52.5c1.7 5.1-.1 10.4-4.4 13.5-4.2 3.1-9.7 3.1-14 .1L101.8 165c-2-1.4-4.6-1.4-6.6 0l-48 29.3c-2 1.5-4.3 2.3-6.7 2.3zm66.2-38.7l50.1 29.3c1.9 1.4 3.5.3 4 0s2-1.6 1.2-3.8l-17.8-52.5c-1.9-6 .1-12.4 5.2-16l40.4-30.6c1.9-1.4 1.5-3.3 1.3-3.9-.2-.6-.9-2.4-3.3-2.4h-.5l-50.9-6c-6.1-.1-11.4-4-13.3-9.9l-19.9-47.7c-.7-2.2-2.7-2.4-3.3-2.4-.6 0-2.5.2-3.3 2.4L77.2 62.6c-1.8 5.5-7.1 9.4-13.2 9.6l-52 7c-2.3 0-3.1 1.8-3.3 2.4-.2.6-.6 2.5 1.2 3.8L47.1 114c4.9 3.6 7 10 5.1 15.9l-15 53.3c-.8 2.4.7 3.6 1.2 4 .5.3 2.2 1.4 4 0l48-29.3c4.7-3.4 11.3-3.5 16.3 0z"></path>
+                </g>
+            </svg>
+            <h1>gynmastic</h1>
+            <div>
+                Gymnastics workouts increase your strength and flexibility while boosting muscular endurance.
+                Much like bodyweight training, it is done without the use of free weights or machines,
+                but using your own weight to provide resistance against gravity.
+            </div>
+            <a src="/workouts">Read more...</a>
+        </div>
+    </section>
+    <section>
+        <img src="./images/kettle-bells"/>
+        <div>
+            <h1>membership</h1>
+            <div>
+                <div>Group Training</div>
+                <div>
+                    <div>
+                        Adult membership:
+                    </div>
+                    <div>
+                        £65/month
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        Student membership:
+                    </div>
+                    <div>
+                        £40/month
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>Personal Training</div>
+                <div>
+                    <div>
+                        1 session per week:
+                    </div>
+                    <div>
+                        £55/hour
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        2+ sessions per week:
+                    </div>
+                    <div>
+                        £50/hour
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h1>get in touch</h1>
+        <form>
+            <div>
+                <input type="text" placeholder="name"/>
+                <input type="text" placeholder="email"/>
+            </div>
+            <div>
+                <input type="text" placeholder="subject"/>
+            </div>
+            <div>
+                <input type="text" placeholder="phone"/>
+            </div>
+            <div>
+                <input type="text" placeholder="address"/>
+            </div>
+            <div>
+                <textarea placeholder="message"></textarea>
+            </div>
+            <button type="submit">send</button>
+        </form>
+        <div>
+            google map?
+        </div>
+    </section>
+    <section class="bold gray footer-email">
+        {{ .Site.Params.email }}
+    </section>
+</div>
+<footer></footer>
 </body>
 </html>
