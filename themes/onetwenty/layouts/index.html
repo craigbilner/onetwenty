@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="full-hw">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,18 +7,18 @@
     <link rel="stylesheet" href="./css/skeleton.css">
 </head>
 <body>
-<div class="m-50">
-    <header class="flex flex-1 flex-end pr-100">
+<div class="content">
+    <header class="flex flex-1 flex-end pt-10">
         <a href="/about" class="green no-decoration bold uppercase">about</a>
         <div class="ml-10 gray bold">{{ .Site.Params.phoneNumber }}</div>
     </header>
-    <section class="mtb-50">
-        {{ partial "logo-large-with-text" . }}
+    <section class="m-10">
+        {{ partial "logo-with-text" . }}
     </section>
     <section>
-        <div class="hero-image flex flex-column flex-spaced flex-align-center ptb-40">
-            <div class="font-xl white uppercase">coming soon</div>
-            <div class="font-l white">
+        <div class="hero-image flex flex-column flex-spaced flex-align-center ptb-40 align-centre">
+            <div class="hero-font-xl white uppercase">coming soon</div>
+            <div class="hero-font-l white">
                 <div class="align-centre">
                     for more info please visit our
                 </div>
@@ -28,10 +28,10 @@
             </div>
         </div>
     </section>
-    <section class="align-right p-25 pr-100 bold gray font-s">
+    <section class="bold gray footer-email">
         {{ .Site.Params.email }}
     </section>
 </div>
-<footer class="bg-green flex flex-1 h-100"></footer>
+<footer></footer>
 </body>
 </html>
