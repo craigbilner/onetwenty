@@ -77,11 +77,23 @@
     margin: 10px 0;
 }
 
+.fb-name-email {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+}
+
 .gmap {
     padding: 10px 0;
 }
 
 @media (min-width: 768px) {
+    .fb-name-email {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 8px;
+    }
+
     .day-short {
         display: none;
     }

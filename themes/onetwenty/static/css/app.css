@@ -42,20 +42,6 @@
     justify-content: center;
 }
 
-/* grid */
-
-.grid {
-    display: grid;
-}
-
-.col-2 {
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.gg-8 {
-    grid-gap: 8px;
-}
-
 /* images */
 
 .img-text {
