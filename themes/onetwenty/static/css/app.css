@@ -14,16 +14,26 @@
 
 /* spacing */
 
-.p-10 {
-    padding: 10px;
+.mb-5 {
+    margin-bottom: 5px;
 }
 
 .mb-10 {
     margin-bottom: 10px;
 }
 
+.mb-20 {
+    margin-bottom: 20px;
+}
+
 .lh-1h {
     line-height: 1.5rem;
+}
+
+/* text */
+
+.capitalise {
+    text-transform: capitalize;
 }
 
 /* flex */
@@ -32,12 +42,21 @@
     justify-content: center;
 }
 
-/* images */
+/* grid */
 
-.img-fw {
-    height: auto;
-    width: 100%;
+.grid {
+    display: grid;
 }
+
+.col-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.gg-8 {
+    grid-gap: 8px;
+}
+
+/* images */
 
 .img-text {
     font-size: 3rem;

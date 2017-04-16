@@ -15,6 +15,72 @@
     padding-left: 18px;
 }
 
+.cost-lv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.get-in-touch {
+    display: flex;
+    flex-flow: column;
+}
+
+.fb-input {
+    background: none;
+    border: 1px solid white;
+    color: white;
+    width: 100%;
+    height: 32px;
+}
+
+.fb-text {
+    padding: 0 0 0 4px;
+}
+
+.fb-ta {
+    padding: 10px 0 0 4px;
+    height: 100px;
+    resize: none;
+}
+
+.fb-input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: white;
+    text-transform: capitalize;
+}
+
+.fb-input::-moz-placeholder { /* Firefox 19+ */
+    color: white;
+    text-transform: capitalize;
+}
+
+.fb-input:-ms-input-placeholder { /* IE 10+ */
+    color: white;
+    text-transform: capitalize;
+}
+
+.fb-input:-moz-placeholder { /* Firefox 18- */
+    color: white;
+    text-transform: capitalize;
+}
+
+.fb-submit {
+    background-color: #c7f2f0;
+    border: none;
+    width: 100%;
+    color: white;
+    height: 32px;
+    text-transform: capitalize;
+    font-size: 1.25rem;
+}
+
+.fb-row {
+    margin: 10px 0;
+}
+
+.gmap {
+    padding: 10px 0;
+}
+
 @media (min-width: 768px) {
     .day-short {
         display: none;

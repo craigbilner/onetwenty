@@ -12,6 +12,11 @@
     width: 100%;
 }
 
+.img-fw {
+    height: auto;
+    width: 100%;
+}
+
 /* spacing */
 
 .m-10 {
@@ -20,6 +25,10 @@
 
 .ml-10 {
     margin-left: 10px;
+}
+
+.p-10 {
+    padding: 10px;
 }
 
 .pt-10 {
