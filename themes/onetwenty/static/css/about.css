@@ -114,6 +114,15 @@
     padding: 10px 0;
 }
 
+.person {
+    flex: 1;
+}
+
+.person-img {
+    width: 100%;
+    height: auto;
+}
+
 @media (min-width: 768px) {
     .fb-name-email {
         display: grid;
@@ -138,7 +147,7 @@
         grid-template-rows: repeat(6, 1fr);
         grid-auto-flow: column;
     }
-    
+
     .timetable-desc-container {
         display: flex;
         justify-content: center;
@@ -148,6 +157,37 @@
         font-size: 1.75rem;
         text-align: center;
         max-width: 600px;
+    }
+
+    .people {
+        display: flex;
+    }
+
+    .mot-title {
+        font-size: 4rem;
+    }
+
+    .pgt-title {
+        font-size: 3rem;
+    }
+
+    .pgt-text {
+        text-align: center;
+        max-width: 900px;
+        margin: 32px auto;
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .workouts {
+        display: flex;
+        max-width: 900px;
+        margin: auto;
+        font-size: 1.5rem;
+    }
+
+    .workout-title {
+        font-size: 3rem;
     }
 }
 

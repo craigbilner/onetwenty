@@ -148,68 +148,72 @@
         </div>
     </section>
     <section class="pt-10">
-        <h1 class="uppercase align-centre">
+        <h1 class="uppercase align-centre mot-title">
             meet our team
         </h1>
-        {{partial "person" (dict "content" . "name" "helena")}}
-        {{partial "person" (dict "content" . "name" "simon")}}
-        {{partial "person" (dict "content" . "name" "claire")}}
+        <div class="people">
+            {{partial "person" (dict "content" . "name" "helena")}}
+            {{partial "person" (dict "content" . "name" "simon")}}
+            {{partial "person" (dict "content" . "name" "claire")}}
+        </div>
     </section>
     <section class="bg-green white p-10">
-        <h1 class="uppercase align-centre mb-10">
+        <h1 class="uppercase align-centre mb-10 pgt-title">
             personalised group training
         </h1>
-        <h3 class="mb-10">
+        <h3 class="mb-10 pgt-text">
             How it works
         </h3>
-        <div class="lh-1h mb-10">
+        <div class="lh-1h mb-10 pgt-text">
             Our programmes target the strengths and weakness of each individuals physical health, through twenty
             different types of fitness and training styles. These is very important when it comes to functional
             training as they all have a crossover with everyday life.
         </div>
-        <div class="lh-1h mb-10">
+        <div class="lh-1h mb-10 pgt-text">
             Everyone has different and specific fitness goals, so when you train with us, our broad programming will
             ensure you achieve your targets, no matter your level of fitness or current ability.
         </div>
-        <h3 class="mb-10">
+        <h3 class="mb-10 pgt-text">
             Our workouts include:
         </h3>
-        <div class="mb-10">
-            <div class="flex flex-centre">
-                {{ partial "star" . }}
+        <div class="workouts">
+            <div class="mb-10 flex-1 p-20">
+                <div class="flex flex-centre">
+                    {{ partial "star" . }}
+                </div>
+                <h1 class="uppercase align-centre mb-10 workout-title">tabata</h1>
+                <div class="font-light">
+                    Tabata is a high-intensity interval training (HIIT), and each exercise in a given workout only lasts
+                    four minutes. A workout could look a bit like this:
+                </div>
+                <ul class="font-light workout-list">
+                    <li>
+                        Workout hard for 20 seconds
+                    </li>
+                    <li>
+                        Rest for 10 seconds
+                    </li>
+                    <li>
+                        Complete 8 rounds
+                    </li>
+                </ul>
+                <div class="font-light">
+                    You push yourself as hard as you can for 20 seconds and rest for 10 seconds. This is one set.
+                    You'll complete eight sets of each exercise.
+                </div>
             </div>
-            <h1 class="uppercase align-centre mb-10">tabata</h1>
-            <div class="font-light">
-                Tabata is a high-intensity interval training (HIIT), and each exercise in a given workout only lasts
-                four minutes. A workout could look a bit like this:
+            <div class="flex-1 p-20">
+                <div class="flex flex-centre">
+                    {{ partial "star" . }}
+                </div>
+                <h1 class="uppercase align-centre mb-10 workout-title">gynmastic</h1>
+                <div class="font-light mb-10">
+                    Gymnastics workouts increase your strength and flexibility while boosting muscular endurance.
+                    Much like bodyweight training, it is done without the use of free weights or machines,
+                    but using your own weight to provide resistance against gravity.
+                </div>
+                <a href="/workouts" class="white">Read more...</a>
             </div>
-            <ul class="font-light workout-list">
-                <li>
-                    Workout hard for 20 seconds
-                </li>
-                <li>
-                    Rest for 10 seconds
-                </li>
-                <li>
-                    Complete 8 rounds
-                </li>
-            </ul>
-            <div class="font-light">
-                You push yourself as hard as you can for 20 seconds and rest for 10 seconds. This is one set.
-                You'll complete eight sets of each exercise.
-            </div>
-        </div>
-        <div>
-            <div class="flex flex-centre">
-                {{ partial "star" . }}
-            </div>
-            <h1 class="uppercase align-centre mb-10">gynmastic</h1>
-            <div class="font-light mb-10">
-                Gymnastics workouts increase your strength and flexibility while boosting muscular endurance.
-                Much like bodyweight training, it is done without the use of free weights or machines,
-                but using your own weight to provide resistance against gravity.
-            </div>
-            <a href="/workouts" class="white">Read more...</a>
         </div>
     </section>
     <section class="p-10 flex flex-column flex-centre flex-align-centre">
