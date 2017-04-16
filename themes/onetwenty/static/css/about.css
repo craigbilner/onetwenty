@@ -1,9 +1,35 @@
 .timetable {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-gap: 4px;
-    margin: 24px 0;
+    margin: 24px auto;
     font-size: 0.75rem;
+    max-width: 1000px;
+    border: 1px solid white;
+    border-right: none;
+}
+
+.timetable > div {
+    border-right: 1px solid white;
+}
+
+.timetable-cell-text {
+    max-width: 75px;
+    text-transform: capitalize;
+    padding: 4px;
+    margin: auto;
+    text-align: center;
+}
+
+.timetable-time, .timetable-day {
+    padding: 4px;
+    text-align: center;
+}
+
+.timetable-img {
+    height: auto;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
 }
 
 .day-long {
@@ -101,5 +127,36 @@
 
     .day-long {
         display: block;
+    }
+
+    .timetable-title {
+        font-size: 3rem;
+    }
+
+    .timetable {
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-auto-flow: column;
+    }
+    
+    .timetable-desc-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .timetable-desc {
+        font-size: 1.75rem;
+        text-align: center;
+        max-width: 600px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .timetable {
+        font-size: 1.25rem;
+    }
+
+    .timetable-cell-text {
+        max-width: 100px;
     }
 }
