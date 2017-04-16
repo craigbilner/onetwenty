@@ -1,0 +1,11 @@
+<div class="card">
+    <div class="card-img-container">
+        <img src="/images/{{ .img }}.webp" alt="{{ .img }}" class="card-img">
+    </div>
+    <div class="card-text-container">
+        <div class="card-text lh-1h bg-blue white">
+            <h1 class="card-text-title capitalise">{{ .title }}</h1>
+            <div>{{ partial .partialName . }}</div>
+        </div>
+    </div>
+</div>

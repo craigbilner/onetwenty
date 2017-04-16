@@ -19,18 +19,7 @@
         <img src="/images/home-hero.webp" class="img-fw"/>
     </section>
     <section class="p-10 flex flex-column flex-centre flex-align-centre">
-        <div class="card bg-blue white">
-            <img src="/images/lunge.webp" alt="lunge" class="img-fw">
-            <div class="card-text lh-1h">
-                <h1 class="card-text-title">About Us</h1>
-                <div>At One Twenty, we offer bespoke personal training in a variety of fitness disciplines. Our
-                    experienced
-                    trainers will get you into shape, whether your goal is to shed a few pounds, tone up or get fitter
-                    and
-                    stronger.
-                </div>
-            </div>
-        </div>
+        {{partial "card" (dict "content" . "img" "lunge" "title" "about us" "partialName" "about-us" )}}
     </section>
     <section class="bg-green white p-10">
         <img src="/images/kettle-bells.webp" alt="kettle bells" class="img-fw">
@@ -138,7 +127,7 @@
         <h3 class="mb-10">
             Our workouts include:
         </h3>
-        <div>
+        <div class="mb-10">
             <div class="flex flex-centre">
                 {{ partial "star" . }}
             </div>
@@ -177,50 +166,7 @@
         </div>
     </section>
     <section class="p-10 flex flex-column flex-centre flex-align-centre">
-        <div class="card bg-blue white">
-            <img src="/images/kettle-bells.webp" alt="kettle bells" class="img-fw">
-            <div class="card-text lh-1h">
-                <h1 class="uppercase align-centre mb-10">membership</h1>
-                <div class="mb-20 font-light">
-                    <div class="mb-5 capitalise">group training</div>
-                    <div class="cost-lv">
-                        <div class="capitalise">
-                            adult membership:
-                        </div>
-                        <div>
-                            £65/month
-                        </div>
-                    </div>
-                    <div class="cost-lv">
-                        <div class="capitalise">
-                            student membership:
-                        </div>
-                        <div>
-                            £40/month
-                        </div>
-                    </div>
-                </div>
-                <div class="font-light">
-                    <div class="mb-5 capitalise">personal training</div>
-                    <div class="cost-lv">
-                        <div>
-                            1 session per week:
-                        </div>
-                        <div>
-                            £55/hour
-                        </div>
-                    </div>
-                    <div class="cost-lv">
-                        <div>
-                            2+ sessions per week:
-                        </div>
-                        <div>
-                            £50/hour
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        {{partial "card" (dict "content" . "img" "kettle-bells" "title" "membership" "partialName" "membership" )}}
     </section>
     <section class="bg-green white p-10">
         <h1 class="uppercase align-centre mb-10">get in touch</h1>
@@ -264,7 +210,6 @@
         {{ .Site.Params.email }}
     </section>
 </div>
-<footer class="bg-green"></footer>
 </body>
 <link rel="stylesheet" href="/css/app.css">
 <link rel="stylesheet" href="/css/about.css">

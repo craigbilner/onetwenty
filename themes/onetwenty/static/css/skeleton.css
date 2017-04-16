@@ -17,6 +17,33 @@
     width: 100%;
 }
 
+/* card */
+
+.card {
+    max-width: 1000px;
+}
+
+.card-img {
+    height: auto;
+    width: 100%;
+}
+
+.card-text {
+    padding: 10px;
+}
+
+.card-text-title {
+    margin-bottom: 10px;
+}
+
+.card-img-container {
+    flex: 2;
+}
+
+.card-text-container {
+    flex: 1;
+}
+
 /* spacing */
 
 .m-10 {
@@ -213,7 +240,17 @@ header {
         font-size: 3rem;
     }
 
+    .card-text {
+        transform: translate(-40px, 40px);
+    }
+
     header {
         padding-right: 50px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .card-text {
+        padding: 50px;
     }
 }

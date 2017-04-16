@@ -48,16 +48,6 @@
     font-size: 3rem;
 }
 
-/* card */
-
-.card-text {
-    padding: 10px;
-}
-
-.card-text-title {
-    margin-bottom: 10px;
-}
-
 /* star */
 
 .star-container {
@@ -78,6 +68,10 @@
 }
 
 @media (min-width: 768px) {
+    .card {
+        display: flex;
+    }
+
     .footer-email {
         padding-right: 50px;
     }
