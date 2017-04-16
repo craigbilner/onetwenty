@@ -50,6 +50,8 @@
 .get-in-touch {
     display: flex;
     flex-flow: column;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .fb-input {
@@ -112,6 +114,8 @@
 
 .gmap {
     padding: 10px 0;
+    max-width: 800px;
+    min-height: 400px;
 }
 
 .person {
@@ -189,6 +193,32 @@
     .workout-title {
         font-size: 3rem;
     }
+
+    .fb-title {
+        font-size: 3rem;
+    }
+
+    .fb-form {
+        padding: 10px;
+        flex: 1;
+    }
+
+    .fb-input {
+        font-size: 1.5rem;
+        height: 44px;
+    }
+
+    .fb-ta {
+        height: 400px;
+    }
+
+    .fb-submit {
+        height: 44px;
+    }
+
+    .get-in-touch {
+        flex-flow: row;
+    }
 }
 
 @media (min-width: 1000px) {
@@ -198,5 +228,9 @@
 
     .timetable-cell-text {
         max-width: 100px;
+    }
+
+    .gmap {
+        min-width: 600px;
     }
 }

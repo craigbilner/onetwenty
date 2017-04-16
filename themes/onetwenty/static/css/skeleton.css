@@ -9,7 +9,7 @@
 
 .full-hw {
     height: 100%;
-    width: 100%;
+    width: 100vw;
 }
 
 .img-fw {
@@ -90,6 +90,10 @@
 
 .flex-align-centre {
     align-items: center;
+}
+
+.flex-centre {
+    justify-content: center;
 }
 
 /* fonts */
