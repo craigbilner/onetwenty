@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ .Site.Title }}</title>
-    <link rel="stylesheet" href="./css/skeleton-home.css">
+    <link rel="stylesheet" href="/css/skeleton.css">
 </head>
 <body>
 <div class="content">
@@ -16,7 +16,7 @@
         {{ partial "logo-with-text" . }}
     </section>
     <section>
-        <div class="hero-image flex flex-column flex-spaced flex-align-center ptb-40 align-centre">
+        <div class="hero-image flex flex-column flex-spaced flex-align-centre ptb-40 align-centre">
             <div class="hero-font-xl white uppercase">coming soon</div>
             <div class="hero-font-l white">
                 <div class="align-centre">
@@ -32,6 +32,8 @@
         {{ .Site.Params.email }}
     </section>
 </div>
-<footer></footer>
+<footer class="bg-green"></footer>
 </body>
+<link rel="stylesheet" href="/css/app.css">
+<link rel="stylesheet" href="/css/home.css">
 </html>

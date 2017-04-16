@@ -1,0 +1,84 @@
+/* colours */
+
+.bg-blue {
+    background-color: #46b5ef;
+}
+
+.bg-green {
+    background-color: #3EC2BA;
+}
+
+.black {
+    color: black;
+}
+
+/* spacing */
+
+.p-10 {
+    padding: 10px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.lh-1h {
+    line-height: 1.5rem;
+}
+
+/* flex */
+
+.flex-centre {
+    justify-content: center;
+}
+
+/* images */
+
+.img-fw {
+    height: auto;
+    width: 100%;
+}
+
+.img-text {
+    font-size: 3rem;
+}
+
+/* card */
+
+.card-text {
+    padding: 10px;
+}
+
+.card-text-title {
+    margin-bottom: 10px;
+}
+
+/* star */
+
+.star-container {
+    height: 75px;
+    width: 75px;
+}
+
+.star {
+    fill: white;
+}
+
+/* special */
+
+.footer-email {
+    height: 40px;
+    text-align: right;
+    padding: 10px;
+}
+
+@media (min-width: 768px) {
+    .footer-email {
+        padding-right: 50px;
+    }
+
+    footer {
+        width: 100%;
+        height: 50px;
+    }
+}

@@ -52,7 +52,7 @@
     justify-content: space-between;
 }
 
-.flex-align-center {
+.flex-align-centre {
     align-items: center;
 }
 
@@ -158,12 +158,6 @@
     font-size: 2rem;
 }
 
-.footer-email {
-    height: 40px;
-    text-align: right;
-    padding: 10px;
-}
-
 header {
     padding-right: 10px;
 }
@@ -210,17 +204,7 @@ header {
         font-size: 3rem;
     }
 
-    .footer-email {
-        padding-right: 50px;
-    }
-
     header {
         padding-right: 50px;
-    }
-
-    footer {
-        background-color: #3EC2BA;
-        width: 100%;
-        height: 50px;
     }
 }
