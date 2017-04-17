@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{ partial "head" . }}
+</head>
+<body>
+<header class="flex flex-1 flex-end pt-10">
+    <a href="/" class="green no-decoration bold uppercase">home</a>
+    <div class="ml-10 gray bold">{{ .Site.Params.phoneNumber }}</div>
+</header>
+<section class="m-10">
+    {{ partial "logo-with-text" . }}
+</section>
+<div class="profile-content p-10">
+    <img src="/images/{{ .Params.img }}.webp" class="img-fw">
+    <div class="profile-name">
+        {{ .Params.name }}
+    </div>
+    {{ .Content }}
+</div>
+<section class="bold gray footer-email">
+    {{ .Site.Params.email }}
+</section>
+</body>
+<link rel="stylesheet" href="/css/app.css">
+<link rel="stylesheet" href="/css/profile.css">
+</html>
