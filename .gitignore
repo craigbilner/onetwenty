@@ -1,4 +1,8 @@
 .idea
 .DS_Store
 public
-
+*.log
+node_modules
+manifestcss.json
+skeletons.json
+dist

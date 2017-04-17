@@ -1,0 +1,40 @@
+{
+  "name": "onetwenty",
+  "version": "0.0.1",
+  "description": "a website for the gym",
+  "main": "index.html",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-css-condense": "^1.1.2"
+  },
+  "engines": {
+    "node": ">=6.10.0"
+  },
+  "scripts": {
+    "build": "gulp build-css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/craigbilner/onetwenty.git"
+  },
+  "keywords": [
+    "website",
+    "responsive",
+    "static",
+    "site",
+    "hugo",
+    "performance"
+  ],
+  "author": "Craig Bilner",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/craigbilner/onetwenty/issues"
+  },
+  "homepage": "https://github.com/craigbilner/onetwenty#readme",
+  "dependencies": {
+    "gulp-concat-css": "^2.3.0",
+    "gulp-file-contents-to-json": "^0.2.1",
+    "gulp-rev": "^7.1.2"
+  }
+}

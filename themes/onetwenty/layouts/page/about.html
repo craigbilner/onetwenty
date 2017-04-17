@@ -140,7 +140,8 @@
             <div class="timetable-desc">
                 Our Yoga and Hiit & Core classes are open to members and non-members. Personal training is also
                 available,
-                <a href="mailto:hello@onetwenty.fit?subject=Personal training session" class="white">contact us</a> to book your session
+                <a href="mailto:hello@onetwenty.fit?subject=Personal training session" class="white">contact us</a> to
+                book your session
             </div>
         </div>
     </section>
@@ -259,6 +260,7 @@
     </section>
 </div>
 </body>
-<link rel="stylesheet" href="/css/app.css">
-<link rel="stylesheet" href="/css/about.css">
+{{ range $key, $value := .Site.Data.manifestcss }}
+<link rel="stylesheet" href="/css/dist/{{ $value }}">
+{{ end }}
 </html>

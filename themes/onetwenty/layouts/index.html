@@ -31,6 +31,7 @@
 </div>
 <footer class="bg-green"></footer>
 </body>
-<link rel="stylesheet" href="/css/app.css">
-<link rel="stylesheet" href="/css/home.css">
+{{ range $key, $value := .Site.Data.manifestcss }}
+<link rel="stylesheet" href="/css/dist/{{ $value }}">
+{{ end }}
 </html>
