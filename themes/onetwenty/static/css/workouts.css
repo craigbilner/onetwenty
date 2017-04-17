@@ -8,11 +8,6 @@
     max-width: 800px;
 }
 
-.workouts-list {
-    padding-left: 15px;
-    margin: 40px 0;
-}
-
 .workouts-list li {
     margin: 8px;
 }

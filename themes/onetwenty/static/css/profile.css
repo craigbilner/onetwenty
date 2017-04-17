@@ -3,14 +3,6 @@
     margin: auto;
 }
 
-.profile-name {
-    font-size: 3rem;
-    max-width: 2rem;
-    line-height: 2.75rem;
-    text-transform: uppercase;
-    margin: 10px 0;
-}
-
 .profile-text p {
     margin: 10px 0;
 }

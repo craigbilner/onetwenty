@@ -63,19 +63,9 @@
 
 /* special */
 
-.footer-email {
-    height: 40px;
-    text-align: right;
-    padding: 10px;
-}
-
 @media (min-width: 768px) {
     .card {
         display: flex;
-    }
-
-    .footer-email {
-        padding-right: 50px;
     }
 
     footer {
