@@ -16,7 +16,8 @@
     "node": ">=6.10.0"
   },
   "scripts": {
-    "build": "gulp build-css && hugo && gulp minify-html"
+    "build-css": "gulp build-css",
+    "build-html": "gulp minify-html"
   },
   "repository": {
     "type": "git",
