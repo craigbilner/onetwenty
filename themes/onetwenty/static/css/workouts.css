@@ -1,0 +1,40 @@
+.workouts-desc {
+    margin: 10px 0;
+    max-width: 500px;
+}
+
+.workouts-lists {
+    margin: auto;
+    max-width: 800px;
+}
+
+.workouts-list {
+    padding-left: 15px;
+    margin: 40px 0;
+}
+
+.workouts-list li {
+    margin: 8px;
+}
+
+.workouts-list-item-title {
+    font-weight: 400;
+}
+
+@media (min-width: 768px) {
+    .workouts-title {
+        text-align: center;
+    }
+
+    .workouts-desc {
+        margin: 10px auto;
+    }
+
+    .workouts-lists {
+        display: flex;
+    }
+
+    .workouts-list {
+        max-width: 350px;
+    }
+}

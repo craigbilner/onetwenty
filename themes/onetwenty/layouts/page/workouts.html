@@ -4,6 +4,116 @@
     {{ partial "head" . }}
 </head>
 <body>
-workouts
+<header class="flex flex-1 flex-end pt-10">
+    <a href="/" class="green no-decoration bold uppercase">home</a>
+    <div class="ml-10 gray bold">{{ .Site.Params.phoneNumber }}</div>
+</header>
+<section class="m-10">
+    {{ partial "logo-with-text" . }}
+</section>
+<div class="workouts gray p-10">
+    <h1 class="workouts-title">our workouts</h1>
+    <div class="workouts-desc">
+        Below you'll find a list of some of the techniques we use in our programmes. If you have any questions,
+        please don't hesitate to ask one of our trainers.
+    </div>
+    <div class="workouts-lists flex-spaced font-light">
+        <ul class="workouts-list">
+            <li>
+                <span class="workouts-list-item-title">Cardiovascular</span> - increasing endurance in variety of
+                exercises
+            </li>
+            <li>
+                <span class="workouts-list-item-title">Strength</span> - increasing muscle endurance and power
+            </li>
+            <li>
+                <span class="workouts-list-item-title">Free weights</span> - using only free wights to teach body to
+                control external objects.
+            </li>
+            <li>
+                <span class="workouts-list-item-title">Body weight</span> - increasing a persons ability to control and
+                strengthen their movement using only their
+                body
+                weight
+            </li>
+            <li>
+                <span class="workouts-list-item-title">Gymnastic</span> - Similar to body weight training but though the
+                application of gymnastic equipment
+            </li>
+            <li>
+                <span class="workouts-list-item-title">Skill</span> - increasing your knowledge, understanding and
+                appreciation of movement. When we know how to move
+                in
+                many
+                different ways we can then apply more weight or add speed
+            </li>
+            <li>
+                <span class="workouts-list-item-title">Coordination</span> - improving the brain to work better with the
+                body during exercise
+            </li>
+            <li>
+                <span class="workouts-list-item-title">Balanced</span> - enhanced sense of stability
+            </li>
+            <li>
+                <span class="workouts-list-item-title">Mobility</span> - free up your entire body, resulting in cleaner
+                movement and more access to your muscles
+            </li>
+            <li>
+                <span class="workouts-list-item-title">Mixed</span> - puts together lots of different fitness and
+                training styles on this list
+            </li>
+        </ul>
+        <ul class="workouts-list">
+            <li>
+                <span class="workouts-list-item-title">HIIT</span> - High Intense Interval Training
+            </li>
+            <li>
+                <span class="workouts-list-item-title">Tabata</span> - using all types of exercise a tabata will get you
+                to work for 20 seconds and rest 10 seconds
+                for 8
+                rounds.
+            </li>
+            <li>
+                <span class="workouts-list-item-title">Partner</span> - working with someone else to achieve a specific
+                task, workout or challenge.
+            </li>
+            <li>
+                <span class="workouts-list-item-title">Team</span> - working in a group of 3 or more to achieve a
+                specific task, workout or challenge.
+            </li>
+            <li>
+                <span class="workouts-list-item-title">Individual</span> - Working on an area of fitness specific to you
+            </li>
+            <li>
+                <span class="workouts-list-item-title">Upper body</span> - workouts that increase performance of muscle
+                that arena the upper body
+            </li>
+            <li>
+                <span class="workouts-list-item-title">Lower body</span> - workouts that increase performance of muscle
+                that arena the lower body
+            </li>
+            <li>
+                <span class="workouts-list-item-title">Core</span> - workouts that increase performance of muscle that
+                are central to the body and help stabile the
+                spine
+            </li>
+            <li>
+                <span class="workouts-list-item-title">Baseline 1 (cardiovascular specific)</span> - These are done
+                every 120 days (4 months) to test improvements you
+                are
+                making
+            </li>
+            <li>
+                <span class="workouts-list-item-title">Baseline 2 (strength specific)</span> - These are done every 120
+                days (4 months) to test improvements
+            </li>
+        </ul>
+    </div>
+</div>
+<section class="bold gray footer-email">
+    {{ .Site.Params.email }}
+</section>
 </body>
+<link rel="stylesheet" href="/css/app.css">
+<link rel="stylesheet" href="/css/workouts.css">
 </html>
