@@ -6,6 +6,19 @@
     margin: 10px 0;
 }
 
-.profile-content p {
+.profile-text p {
     margin: 10px 0;
+}
+
+.profile-text h1 {
+    margin: 10px 0;
+    text-transform: capitalize;
+}
+
+.profile-text ul {
+    padding-left: 20px;
+}
+
+.profile-text li {
+    margin: 4px 0;
 }

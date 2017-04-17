@@ -17,3 +17,12 @@ Grit/RPM/Sprint/CXWORX.
 
 Claire is highly passionate, enthusiastic and energetic with a desire to 
 progress you to your goals.
+
+# qualifications
+
+* Education/Qualifications
+* CYQ level 3 Personal Trainer
+* Les Mills - RPM/Sprint/Grit/CX
+* National Sport Diploma
+* Indoor Cycling
+* Powerplate

@@ -13,10 +13,12 @@
 </section>
 <div class="profile-content p-10">
     <img src="/images/{{ .Params.img }}.webp" class="img-fw">
-    <div class="profile-name">
-        {{ .Params.name }}
+    <div class="profile-text">
+        <div class="profile-name">
+            {{ .Params.name }}
+        </div>
+        {{ .Content }}
     </div>
-    {{ .Content }}
 </div>
 <section class="bold gray footer-email">
     {{ .Site.Params.email }}
