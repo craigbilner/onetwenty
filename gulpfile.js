@@ -4,6 +4,7 @@ const cssc = require('gulp-css-condense');
 const clean = require('gulp-clean');
 const fc2json = require('gulp-file-contents-to-json');
 const concatCss = require('gulp-concat-css');
+const htmlmin = require('gulp-htmlmin');
 
 const THEME_DIR = 'themes/onetwenty/';
 const CSS_DIR = `${THEME_DIR}static/css/`;
@@ -33,5 +34,11 @@ gulp.task('make-skeletons', () =>
     }))
     .pipe(gulp.dest(`${THEME_DIR}/data`))
 );
+
+gulp.task('minify-html', function() {
+  return gulp.src(`public/**/*.html`)
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest('./'));
+});
 
 gulp.task('build-css', ['minify-css', 'make-skeletons']);

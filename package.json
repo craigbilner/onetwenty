@@ -9,13 +9,14 @@
     "gulp-concat-css": "^2.3.0",
     "gulp-css-condense": "^1.1.2",
     "gulp-file-contents-to-json": "^0.2.1",
+    "gulp-htmlmin": "^3.0.0",
     "gulp-rev": "^7.1.2"
   },
   "engines": {
     "node": ">=6.10.0"
   },
   "scripts": {
-    "build": "gulp build-css"
+    "build": "gulp build-css && hugo && gulp minify-html"
   },
   "repository": {
     "type": "git",
