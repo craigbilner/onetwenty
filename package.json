@@ -6,7 +6,10 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-clean": "^0.3.2",
-    "gulp-css-condense": "^1.1.2"
+    "gulp-concat-css": "^2.3.0",
+    "gulp-css-condense": "^1.1.2",
+    "gulp-file-contents-to-json": "^0.2.1",
+    "gulp-rev": "^7.1.2"
   },
   "engines": {
     "node": ">=6.10.0"
