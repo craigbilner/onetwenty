@@ -25,6 +25,19 @@
     width: 100%;
 }
 
+.img-fh {
+    height: 100%;
+    width: auto;
+}
+
+.vh-50 {
+    height: 50vh;
+}
+
+.mh-400 {
+    min-height: 400px;
+}
+
 /* card */
 
 .card {
@@ -156,6 +169,12 @@
     transform-origin: top left;
 }
 
+/* overflow */
+
+.o-hidden {
+    overflow: hidden;
+}
+
 /* special */
 
 .footer-email {
@@ -197,11 +216,6 @@
     left: 0;
     position: absolute;
     transform: scale(0.5);
-}
-
-.hero-image {
-    background-image: url("../images/home-hero.webp");
-    height: 400px;
 }
 
 .hero-font-xl {
