@@ -1,3 +1,8 @@
+.profile-content {
+    max-width: 1000px;
+    margin: auto;
+}
+
 .profile-name {
     font-size: 3rem;
     max-width: 2rem;
@@ -21,4 +26,12 @@
 
 .profile-text li {
     margin: 4px 0;
+}
+
+@media (min-width: 548px) {
+    .profile-img {
+        float: right;
+        max-width: 300px;
+        margin: 10px;
+    }
 }
