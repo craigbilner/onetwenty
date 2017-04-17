@@ -13,14 +13,14 @@
         {{ partial "logo-with-text" . }}
     </section>
     <section class="p-10">
-        <img src="/images/home-hero.webp" class="img-fw"/>
+        <img src="/images/home-hero.opt.jpg" alt="gym step" class="img-fw"/>
     </section>
     <section class="p-10 flex flex-column flex-centre flex-align-centre">
         {{partial "card" (dict "content" . "img" "lunge" "title" "about us" "partialName" "about-us" )}}
     </section>
     <section class="bg-green white p-10">
         <div class="align-centre">
-            <img src="/images/kettle-bells.webp" alt="kettle bells" class="timetable-img">
+            <img src="/images/kettle-bells.opt.jpg" alt="kettle bells" class="timetable-img">
         </div>
         <h1 class="uppercase align-centre timetable-title">timetable</h1>
         <div class="timetable font-light">
@@ -214,7 +214,7 @@
             </div>
         </div>
     </section>
-    <section class="p-10 flex flex-column flex-centre flex-align-centre">
+    <section class="p-10 flex flex-column flex-centre flex-align-centre membership-section">
         {{partial "card" (dict "content" . "img" "kettle-bells" "title" "membership" "partialName" "membership" )}}
     </section>
     <section class="bg-green white p-10">

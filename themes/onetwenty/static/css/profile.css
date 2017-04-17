@@ -19,11 +19,3 @@
 .profile-text li {
     margin: 4px 0;
 }
-
-@media (min-width: 548px) {
-    .profile-img {
-        float: right;
-        max-width: 300px;
-        margin: 10px;
-    }
-}

@@ -243,6 +243,14 @@ header {
     margin: 40px 0;
 }
 
+@media (min-width: 548px) {
+    .profile-img {
+        float: right;
+        max-width: 300px;
+        margin: 10px;
+    }
+}
+
 @media (min-width: 768px) {
     .content {
         height: calc(100vh - 50px);
@@ -287,6 +295,7 @@ header {
 
     .card-text {
         transform: translate(-40px, 40px);
+        min-width: 300px;
     }
 
     header {
@@ -301,5 +310,6 @@ header {
 @media (min-width: 1000px) {
     .card-text {
         padding: 50px;
+        min-width: 400px;
     }
 }

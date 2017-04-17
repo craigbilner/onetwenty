@@ -127,6 +127,10 @@
     height: auto;
 }
 
+.membership-section {
+    min-height: 350px;
+}
+
 @media (min-width: 768px) {
     .fb-name-email {
         display: grid;
@@ -228,6 +232,10 @@
 
     .timetable-cell-text {
         max-width: 100px;
+    }
+
+    .membership-section {
+        min-height: 500px;
     }
 
     .gmap {
