@@ -21,4 +21,12 @@
   } else {
     window.addEventListener('load', loadDeferredStyles);
   }
+
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js', {
+      scope: '/',
+    })
+      .then(() => console.info(`Registration succeeded.`))
+      .catch(error => console.error(`Registration failed with ${error}`));
+  }
 </script>
