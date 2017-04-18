@@ -1,4 +1,4 @@
-const VERSION = 'V2';
+const VERSION = 'V3';
 
 const ASSETS = [
   '/images/hand-stands.opt.jpg',
@@ -40,7 +40,7 @@ const checkCache = req => new Promise(res => {
 this.addEventListener('fetch', event => {
   event.respondWith(
     checkCache(event.request).then(resp => resp || fetch(event.request).then(response => {
-      if (pages[event.request.url] !== undefined || /bundle-[a-z0-9]*.css/.test(event.request.url)) {
+      if (response.ok && (pages[event.request.url] !== undefined || /bundle-[a-z0-9]*.css/.test(event.request.url))) {
         caches.open(VERSION).then(cache => cache.put(event.request, response));
       }
       return response.clone();
