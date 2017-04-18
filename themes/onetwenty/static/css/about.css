@@ -25,13 +25,6 @@
     text-align: center;
 }
 
-.timetable-img {
-    height: auto;
-    width: 100%;
-    max-width: 800px;
-    margin: auto;
-}
-
 .day-long {
     display: none;
 }

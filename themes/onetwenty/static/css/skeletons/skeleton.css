@@ -248,6 +248,13 @@ header {
     margin: 40px 0;
 }
 
+.timetable-img {
+    height: auto;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
 @media (min-width: 548px) {
     .profile-img {
         float: right;

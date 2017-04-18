@@ -114,7 +114,5 @@
     {{ .Site.Params.email }}
 </section>
 </body>
-{{ range $key, $value := .Site.Data.manifestcss }}
-<link rel="stylesheet" href="/css/dist/{{ $value }}">
-{{ end }}
+{{ partial "css" . }}
 </html>

@@ -260,7 +260,5 @@
     </section>
 </div>
 </body>
-{{ range $key, $value := .Site.Data.manifestcss }}
-<link rel="stylesheet" href="/css/dist/{{ $value }}">
-{{ end }}
+{{ partial "css" . }}
 </html>
