@@ -11,6 +11,10 @@ const CSS_DIR = `${THEME_DIR}static/css/`;
 const OUT_DIR = `${CSS_DIR}/dist`;
 const SKELETON_DIR = `${CSS_DIR}/skeletons/`;
 
+const CSSC_OPTS = {
+  consolidateViaDeclarations: false,
+};
+
 gulp.task('clean', () =>
   gulp.src(OUT_DIR, { read: false })
     .pipe(clean())
@@ -19,7 +23,7 @@ gulp.task('clean', () =>
 gulp.task('minify-css', ['clean'], () =>
   gulp.src(`${CSS_DIR}*.css`)
     .pipe(concatCss('bundle.css'))
-    .pipe(cssc())
+    .pipe(cssc(CSSC_OPTS))
     .pipe(rev())
     .pipe(gulp.dest(OUT_DIR))
     .pipe(rev.manifest('manifestcss.json'))
@@ -28,7 +32,7 @@ gulp.task('minify-css', ['clean'], () =>
 
 gulp.task('make-skeletons', () =>
   gulp.src(`${SKELETON_DIR}*.css`)
-    .pipe(cssc())
+    .pipe(cssc(CSSC_OPTS))
     .pipe(fc2json('skeletons.json', {
       extname: false,
     }))
