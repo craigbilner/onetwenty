@@ -1,8 +1,8 @@
-const VERSION = 'V3';
+const VERSION = 'V4';
 
 const ASSETS = [
   '/images/hand-stands.opt.jpg',
-  '/images/home-hero.opt2.jpg',
+  '/images/home-hero.ropt.jpg',
   '/images/lunge.opt.jpg',
   '/images/kettle-bells.opt2.jpg',
   '/images/helena.opt.jpg',
