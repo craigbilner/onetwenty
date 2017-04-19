@@ -239,12 +239,27 @@ header {
     padding-right: 10px;
 }
 
+.profile-content {
+    max-width: 1000px;
+    margin: auto;
+}
+
 .profile-name {
     font-size: 3rem;
     max-width: 2rem;
     line-height: 2.75rem;
     text-transform: uppercase;
     margin: 10px 0;
+}
+
+.workouts-desc {
+    margin: 10px 0;
+    max-width: 500px;
+}
+
+.workouts-lists {
+    margin: auto;
+    max-width: 800px;
 }
 
 .workouts-list {
@@ -312,6 +327,10 @@ header {
     .card-text {
         transform: translate(-40px, 40px);
         min-width: 300px;
+    }
+
+    .workouts-desc {
+        margin: 10px auto;
     }
 
     header {

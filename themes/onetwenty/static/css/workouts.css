@@ -1,13 +1,3 @@
-.workouts-desc {
-    margin: 10px 0;
-    max-width: 500px;
-}
-
-.workouts-lists {
-    margin: auto;
-    max-width: 800px;
-}
-
 .workouts-list li {
     margin: 8px;
 }
@@ -19,10 +9,6 @@
 @media (min-width: 768px) {
     .workouts-title {
         text-align: center;
-    }
-
-    .workouts-desc {
-        margin: 10px auto;
     }
 
     .workouts-lists {
