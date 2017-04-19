@@ -1,13 +1,20 @@
-const VERSION = 'V4';
+const VERSION = 'V5';
 
 const ASSETS = [
   '/images/hand-stands.opt.jpg',
+  '/images/hand-stands.sopt.jpg',
   '/images/home-hero.ropt.jpg',
+  '/images/home-hero.sopt.jpg',
   '/images/lunge.opt.jpg',
+  '/images/lunge.sopt.jpg',
   '/images/kettle-bells.opt2.jpg',
+  '/images/kettle-bells.sopt.jpg',
   '/images/helena.opt.jpg',
+  '/images/helena.sopt.jpg',
   '/images/simon.opt.jpg',
+  '/images/simon.sopt.jpg',
   '/images/claire.opt.jpg',
+  '/images/claire.sopt.jpg',
 ];
 
 this.addEventListener('install', function(event) {

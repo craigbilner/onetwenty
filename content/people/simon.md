@@ -3,7 +3,8 @@ date = "2017-04-16T21:16:13+01:00"
 title = "simon"
 type = "people"
 layout = "profile"
-img = "simon"
+imgLarge = "simon.opt"
+imgSmall = "simon.sopt"
 name = "simon paine"
 +++
 

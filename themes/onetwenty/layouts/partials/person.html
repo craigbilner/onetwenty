@@ -1,4 +1,7 @@
 <div class="p-10 align-centre person">
-    <img src="/images/{{ .name }}.opt.jpg" alt="person" class="person-img">
+    <picture>
+        <source media="(min-width: 450px)" srcset="/images/{{ .imgLarge }}.jpg">
+        <img src="/images/{{ .imgSmall }}.jpg" alt="person" class="person-img">
+    </picture>
     <a href="/people/{{ .name }}" class="black img-text">{{ .name }}</a>
 </div>

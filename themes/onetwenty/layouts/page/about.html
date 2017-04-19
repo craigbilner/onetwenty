@@ -13,14 +13,20 @@
         {{ partial "logo-with-text" . }}
     </section>
     <section class="p-10">
-        <img src="/images/home-hero.ropt.jpg" alt="gym step" class="img-fw"/>
+        <picture>
+            <source media="(min-width: 450px)" srcset="/images/home-hero.opt.jpg">
+            <img src="/images/home-hero.sopt.jpg" alt="gym step" class="img-fw"/>
+        </picture>
     </section>
     <section class="p-10 flex flex-column flex-centre flex-align-centre">
-        {{partial "card" (dict "content" . "img" "lunge.opt" "title" "about us" "partialName" "about-us" )}}
+        {{partial "card" (dict "content" . "imgSmall" "lunge.sopt" "imgLarge" "lunge.opt" "title" "about us" "partialName" "about-us" )}}
     </section>
     <section class="bg-green white p-10">
         <div class="align-centre">
-            <img src="/images/kettle-bells.opt2.jpg" alt="kettle bells" class="timetable-img">
+            <picture>
+                <source media="(min-width: 450px)" srcset="/kettle-bells.opt2.jpg">
+                <img src="/images/kettle-bells.sopt.jpg" alt="kettle bells" class="timetable-img">
+            </picture>
         </div>
         <h1 class="uppercase align-centre timetable-title">timetable</h1>
         <div class="timetable font-light">
@@ -150,9 +156,9 @@
             meet our team
         </h1>
         <div class="people">
-            {{partial "person" (dict "content" . "name" "helena")}}
-            {{partial "person" (dict "content" . "name" "simon")}}
-            {{partial "person" (dict "content" . "name" "claire")}}
+            {{partial "person" (dict "content" . "name" "helena" "imgSmall" "helena.sopt" "imgLarge" "helena.opt")}}
+            {{partial "person" (dict "content" . "name" "simon" "imgSmall" "simon.sopt" "imgLarge" "simon.opt")}}
+            {{partial "person" (dict "content" . "name" "claire" "imgSmall" "claire.sopt" "imgLarge" "claire.opt")}}
         </div>
     </section>
     <section class="bg-green white p-10">
@@ -215,7 +221,7 @@
         </div>
     </section>
     <section class="p-10 flex flex-column flex-centre flex-align-centre membership-section">
-        {{partial "card" (dict "content" . "img" "kettle-bells.opt2" "title" "membership" "partialName" "membership" )}}
+        {{partial "card" (dict "content" . "imgSmall" "kettle-bells.sopt" "imgLarge" "kettle-bells.opt2" "title" "membership" "partialName" "membership" )}}
     </section>
     <section class="bg-green white p-10">
         <h1 class="uppercase align-centre mb-10 fb-title">get in touch</h1>

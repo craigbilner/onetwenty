@@ -1,6 +1,9 @@
 <div class="card">
     <div class="card-img-container">
-        <img src="/images/{{ .img }}.jpg" alt="{{ .img }}" class="card-img">
+        <picture>
+            <source media="(min-width: 450px)" srcset="/images/{{ .imgLarge }}.jpg">
+            <img src="/images/{{ .imgSmall }}.jpg" alt="{{ .img }}" class="card-img">
+        </picture>
     </div>
     <div class="card-text-container">
         <div class="card-text lh-1h bg-blue white">

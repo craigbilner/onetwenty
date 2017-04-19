@@ -3,7 +3,8 @@ date = "2017-04-16T21:16:13+01:00"
 title = "claire"
 type = "people"
 layout = "profile"
-img = "claire"
+imgLarge = "claire.opt"
+imgSmall = "claire.sopt"
 name = "claire hoadley"
 +++
 
