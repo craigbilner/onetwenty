@@ -1,0 +1,21 @@
+<script>
+  var slides = document.querySelector('.slideshow').children;
+  var curIndx = 0;
+
+  function transitionSlide() {
+    slides[curIndx].classList.add('slide-hide');
+
+    if (curIndx === (slides.length - 1)) {
+      curIndx = 0;
+    } else {
+      curIndx++;
+    }
+    slides[curIndx].classList.remove('slide-hide');
+  }
+
+  function changeSlide() {
+    requestAnimationFrame(transitionSlide);
+  }
+
+  setInterval(changeSlide, 5000);
+</script>
