@@ -5,13 +5,7 @@
 </head>
 <body class="full-hw">
 <div class="content full-hw">
-    <header class="flex flex-1 flex-end pt-10">
-        <a href="/" class="green no-decoration bold uppercase">home</a>
-        <div class="ml-10 gray bold">{{ .Site.Params.phoneNumber }}</div>
-    </header>
-    <section class="m-10">
-        {{ partial "logo-with-text" . }}
-    </section>
+    {{ partial "top" (dict "content" . "linkUrl" "/" "linkName" "home" "phone" .Site.Params.phoneNumber )}}
     <section class="p-10 relative o-hidden slideshow">
         <picture class="slide">
             <source media="(min-width: 450px)" srcset="/images/home-hero.ropt.jpg">
@@ -228,7 +222,7 @@
                     Much like bodyweight training, it is done without the use of free weights or machines,
                     but using your own weight to provide resistance against gravity.
                 </div>
-                <a href="/workouts" class="white">Read more...</a>
+                <a href="/workouts/" class="white">Read more...</a>
             </div>
         </div>
     </section>

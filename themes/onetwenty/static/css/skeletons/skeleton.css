@@ -352,6 +352,10 @@ header {
         min-width: 300px;
     }
 
+    .workouts-title {
+        text-align: center;
+    }
+
     .workouts-desc {
         margin: 10px auto;
     }

@@ -5,13 +5,7 @@
 </head>
 <body>
 <div class="content">
-    <header class="flex flex-1 flex-end pt-10">
-        <a href="/about" class="green no-decoration bold uppercase">about</a>
-        <div class="ml-10 gray bold">{{ .Site.Params.phoneNumber }}</div>
-    </header>
-    <section class="m-10">
-        {{ partial "logo-with-text" . }}
-    </section>
+    {{ partial "top" (dict "content" . "linkUrl" "/about/" "linkName" "about" "phone" .Site.Params.phoneNumber) }}
     <section class="vh-50 mh-400 relative o-hidden flex flex-centre">
         <img src="/images/hand-stands.opt.jpg" alt="view of gym" class="img-fh"/>
         <div class="flex flex-column flex-spaced flex-align-centre ptb-40 align-centre absolute full-hw pos-top">
