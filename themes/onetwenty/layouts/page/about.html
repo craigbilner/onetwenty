@@ -47,31 +47,7 @@
     <section class="bg-green white p-10">
         <h1 class="uppercase align-centre mb-10 fb-title">get in touch</h1>
         <div class="get-in-touch">
-            <form class="fb-form">
-                <div class="fb-name-email">
-                    <div>
-                        <input type="text" name="name" placeholder="name" class="fb-input fb-text" autocomplete="name"/>
-                    </div>
-                    <div>
-                        <input type="email" name="email" placeholder="email" class="fb-input fb-text"
-                               autocomplete="email"/>
-                    </div>
-                </div>
-                <div class="fb-row">
-                    <input type="text" placeholder="subject" class="fb-input fb-text"/>
-                </div>
-                <div class="fb-row">
-                    <input type="tel" name="phone" placeholder="phone" class="fb-input fb-text" autocomplete="tel"/>
-                </div>
-                <div class="fb-row">
-                    <input type="text" name="ship-address" placeholder="address" class="fb-input fb-text"
-                           autocomplete="shipping street-address"/>
-                </div>
-                <div class="fb-row">
-                    <textarea placeholder="message" class="fb-input fb-ta"></textarea>
-                </div>
-                <button type="submit" class="fb-submit">send</button>
-            </form>
+            {{ partial "contact-form" . }}
             <div class="gmap">
                 <iframe
                         width="100%"
