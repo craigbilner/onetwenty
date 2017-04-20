@@ -13,8 +13,9 @@
     slides[curIndx].classList.remove('slide-hide');
   }
 
+  var raf = requestAnimationFrame || mozRequestAnimationFrame || webkitRequestAnimationFrame || msRequestAnimationFrame;
   function changeSlide() {
-    requestAnimationFrame(transitionSlide);
+    raf(transitionSlide);
   }
 
   setInterval(changeSlide, 5000);
