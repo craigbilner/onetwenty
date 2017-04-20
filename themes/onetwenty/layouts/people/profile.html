@@ -1,16 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    {{ partial "head" . }}
-</head>
+{{ partial "head" . }}
 <body>
-<header class="flex flex-1 flex-end pt-10">
-    <a href="/" class="green no-decoration bold uppercase">home</a>
-    <div class="ml-10 gray bold">{{ .Site.Params.phoneNumber }}</div>
-</header>
-<section class="m-10">
-    {{ partial "logo-with-text" . }}
-</section>
+{{ partial "top" (dict "content" . "linkUrl" "/" "linkName" "home" "phone" .Site.Params.phoneNumber) }}
 <div class="profile-content p-10">
     <picture>
         <source media="(min-width: 450px)" srcset="/images/{{ .Params.imgLarge }}.jpg">

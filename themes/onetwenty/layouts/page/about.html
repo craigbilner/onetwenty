@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="full-hw">
-<head>
-    {{ partial "head" . }}
-</head>
+{{ partial "head" . }}
 <body class="full-hw">
 <div class="content full-hw">
     {{ partial "top" (dict "content" . "linkUrl" "/" "linkName" "home" "phone" .Site.Params.phoneNumber )}}
