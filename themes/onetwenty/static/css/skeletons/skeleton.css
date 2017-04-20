@@ -184,6 +184,12 @@
     overflow: hidden;
 }
 
+/* display */
+
+.hidden {
+    display: none;
+}
+
 /* special */
 
 .footer-email {
@@ -272,6 +278,23 @@ header {
     width: 100%;
     max-width: 800px;
     margin: auto;
+}
+
+.slideshow {
+    height: 40vw;
+}
+
+.slide {
+    transition: opacity 2s ease-out;
+}
+
+.slide-img {
+    height: 100%;
+    width: calc(100vw - 20px);
+}
+
+.slide-hide {
+    opacity: 0;
 }
 
 @media (min-width: 548px) {

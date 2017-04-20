@@ -12,10 +12,22 @@
     <section class="m-10">
         {{ partial "logo-with-text" . }}
     </section>
-    <section class="p-10">
-        <picture>
+    <section class="p-10 relative o-hidden slideshow">
+        <picture class="slide">
             <source media="(min-width: 450px)" srcset="/images/home-hero.ropt.jpg">
-            <img src="/images/home-hero.sopt.jpg" alt="gym step" class="img-fw"/>
+            <img src="/images/home-hero.sopt.jpg" alt="gym step" class="slide-img absolute"/>
+        </picture>
+        <picture class="slide slide-hide">
+            <source media="(min-width: 450px)" srcset="/images/lunge-large.opt.jpg">
+            <img src="/images/lunge-large.sopt.jpg" alt="lunging" class="slide-img absolute"/>
+        </picture>
+        <picture class="slide slide-hide">
+            <source media="(min-width: 450px)" srcset="/images/squat.opt.jpg">
+            <img src="/images/squat.sopt.jpg" alt="squatting" class="slide-img absolute"/>
+        </picture>
+        <picture class="slide slide-hide">
+            <source media="(min-width: 450px)" srcset="/images/hand-stands.opt.jpg">
+            <img src="/images/hand-stands.sopt.jpg" alt="hand standing" class="slide-img absolute"/>
         </picture>
     </section>
     <section class="p-10 flex flex-column flex-centre flex-align-centre">
@@ -232,7 +244,8 @@
                         <input type="text" name="name" placeholder="name" class="fb-input fb-text" autocomplete="name"/>
                     </div>
                     <div>
-                        <input type="email" name="email" placeholder="email" class="fb-input fb-text" autocomplete="email"/>
+                        <input type="email" name="email" placeholder="email" class="fb-input fb-text"
+                               autocomplete="email"/>
                     </div>
                 </div>
                 <div class="fb-row">
@@ -267,4 +280,25 @@
 </div>
 </body>
 {{ partial "scripts" . }}
+<script>
+  var slides = document.querySelector('.slideshow').children;
+  var curIndx = 0;
+
+  function transitionSlide() {
+    slides[curIndx].classList.add('slide-hide');
+
+    if (curIndx === (slides.length - 1)) {
+      curIndx = 0;
+    } else {
+      curIndx++;
+    }
+    slides[curIndx].classList.remove('slide-hide');
+  }
+
+  function changeSlide() {
+    requestAnimationFrame(transitionSlide);
+  }
+
+  setInterval(changeSlide, 5000);
+</script>
 </html>
