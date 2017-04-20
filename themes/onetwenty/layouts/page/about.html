@@ -59,9 +59,7 @@
             </div>
         </div>
     </section>
-    <section class="bold gray footer-email">
-        {{ .Site.Params.email }}
-    </section>
+    {{ partial "footer" .Site.Params.email }}
 </div>
 </body>
 {{ partial "scripts" . }}

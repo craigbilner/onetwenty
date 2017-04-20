@@ -104,9 +104,7 @@
         </ul>
     </div>
 </div>
-<section class="bold gray footer-email">
-    {{ .Site.Params.email }}
-</section>
+{{ partial "footer" .Site.Params.email }}
 </body>
 {{ partial "scripts" . }}
 </html>
