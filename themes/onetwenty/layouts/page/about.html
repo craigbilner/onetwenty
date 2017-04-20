@@ -6,24 +6,7 @@
 <body class="full-hw">
 <div class="content full-hw">
     {{ partial "top" (dict "content" . "linkUrl" "/" "linkName" "home" "phone" .Site.Params.phoneNumber )}}
-    <section class="p-10 relative o-hidden slideshow">
-        <picture class="slide">
-            <source media="(min-width: 450px)" srcset="/images/home-hero.ropt.jpg">
-            <img src="/images/home-hero.sopt.jpg" alt="gym step" class="slide-img absolute"/>
-        </picture>
-        <picture class="slide slide-hide">
-            <source media="(min-width: 450px)" srcset="/images/lunge-large.opt.jpg">
-            <img src="/images/lunge-large.sopt.jpg" alt="lunging" class="slide-img absolute"/>
-        </picture>
-        <picture class="slide slide-hide">
-            <source media="(min-width: 450px)" srcset="/images/squat.opt.jpg">
-            <img src="/images/squat.sopt.jpg" alt="squatting" class="slide-img absolute"/>
-        </picture>
-        <picture class="slide slide-hide">
-            <source media="(min-width: 450px)" srcset="/images/hand-stands.opt.jpg">
-            <img src="/images/hand-stands.sopt.jpg" alt="hand standing" class="slide-img absolute"/>
-        </picture>
-    </section>
+    {{ partial "slideshow" . }}
     <section class="p-10 flex flex-column flex-centre flex-align-centre">
         {{partial "card" (dict "content" . "imgSmall" "lunge.sopt" "imgLarge" "lunge.opt" "title" "about us" "partialName" "about-us" )}}
     </section>
@@ -35,119 +18,7 @@
             </picture>
         </div>
         <h1 class="uppercase align-centre timetable-title">timetable</h1>
-        <div class="timetable font-light">
-            <div></div>
-            <div class="timetable-time">08:45</div>
-            <div class="timetable-time">09:45</div>
-            <div class="timetable-time">11:00</div>
-            <div class="timetable-time">18:30</div>
-            <div class="timetable-time">19:30</div>
-            <div class="timetable-day">
-                <div class="day-long uppercase">monday</div>
-                <div class="day-short uppercase">mon</div>
-            </div>
-            <div class="timetable-cell">
-                <div class="timetable-cell-text">group training</div>
-            </div>
-            <div class="timetable-cell">
-                <div class="timetable-cell-text">group training</div>
-            </div>
-            <div></div>
-            <div class="timetable-cell">
-                <div class="timetable-cell-text">group training</div>
-            </div>
-            <div class="timetable-cell">
-                <div class="timetable-cell-text">group training</div>
-            </div>
-            <div class="timetable-day">
-                <div class="day-long uppercase">tuesday</div>
-                <div class="day-short uppercase">tue</div>
-            </div>
-            <div class="timetable-cell">
-                <div class="timetable-cell-text">group training</div>
-            </div>
-            <div class="timetable-cell">
-                <div class="timetable-cell-text">group training</div>
-            </div>
-            <div></div>
-            <div class="timetable-cell">
-                <div class="timetable-cell-text">group training</div>
-            </div>
-            <div class="timetable-cell">
-                <div class="timetable-cell-text">group training</div>
-            </div>
-            <div class="timetable-day">
-                <div class="day-long uppercase">wednesday</div>
-                <div class="day-short uppercase">wed</div>
-            </div>
-            <div class="timetable-cell">
-                <div class="timetable-cell-text">group training</div>
-            </div>
-            <div class="timetable-cell">
-                <div class="timetable-cell-text">group training</div>
-            </div>
-            <div class="timetable-cell">
-                <div class="timetable-cell-text">HiiT & Core (STARTS 26.04.17)</div>
-            </div>
-            <div class="timetable-cell">
-                <div class="timetable-cell-text">group training</div>
-            </div>
-            <div class="timetable-cell">
-                <div class="timetable-cell-text">group training</div>
-            </div>
-            <div class="timetable-day">
-                <div class="day-long uppercase">thursday</div>
-                <div class="day-short uppercase">thu</div>
-            </div>
-            <div class="timetable-cell">
-                <div class="timetable-cell-text">group training</div>
-            </div>
-            <div class="timetable-cell">
-                <div class="timetable-cell-text">group training</div>
-            </div>
-            <div></div>
-            <div class="timetable-cell">
-                <div class="timetable-cell-text">group training</div>
-            </div>
-            <div class="timetable-cell">
-                <div class="timetable-cell-text">group training</div>
-            </div>
-            <div class="timetable-day">
-                <div class="day-long uppercase">friday</div>
-                <div class="day-short uppercase">fri</div>
-            </div>
-            <div class="timetable-cell">
-                <div class="timetable-cell-text">group training</div>
-            </div>
-            <div class="timetable-cell">
-                <div class="timetable-cell-text">group training</div>
-            </div>
-            <div class="timetable-cell">
-                <div class="timetable-cell-text">yoga (monthly)</div>
-            </div>
-            <div></div>
-            <div></div>
-            <div class="timetable-day">
-                <div class="day-long uppercase">saturday</div>
-                <div class="day-short uppercase">sat</div>
-            </div>
-            <div></div>
-            <div class="timetable-cell">
-                <div class="timetable-cell-text">group training</div>
-            </div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div class="timetable-day">
-                <div class="day-long uppercase">sunday</div>
-                <div class="day-short uppercase">sun</div>
-            </div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
+        {{ partial "timetable" . }}
         <div class="timetable-desc-container">
             <div class="timetable-desc">
                 Our Yoga and Hiit & Core classes are open to members and non-members. Personal training is also
