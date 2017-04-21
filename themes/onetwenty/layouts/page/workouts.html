@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-{{ partial "head" . }}
+<head>
+    {{ partial "head" . }}
+</head>
 <body>
 {{ partial "top" (dict "content" . "linkUrl" "/" "linkName" "home" "phone" .Site.Params.phoneNumber) }}
 <div class="workouts-content gray p-10">

@@ -1,6 +1,7 @@
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ .Site.Title }}</title>
-    <style>{{ .Site.Data.skeletons.skeleton | safeCSS }}</style>
-</head>
+{{ range $key, $value := .Site.Data.manifestcss }}
+    <link rel="preload" as="style" href="/css/dist/{{ $value }}" onload="this.rel='stylesheet'">
+{{ end }}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ .Site.Title }}</title>
+<style>{{ .Site.Data.skeletons.skeleton | safeCSS }}</style>

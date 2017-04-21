@@ -1,4 +1,4 @@
-const VERSION = 'V5';
+const VERSION = 'V6';
 
 const ASSETS = [
   '/images/hand-stands.opt.jpg',

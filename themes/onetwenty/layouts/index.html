@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" class="full-hw">
-{{ partial "head" . }}
+<head>
+    <link rel="preload" as="image" href="/images/hand-stands.opt.jpg">
+    <link rel="prefetch" href="/images/home-hero.ropt.jpg">
+    <link rel="prefetch" href="/images/home-hero.sopt.jpg">
+    <link rel="prefetch" href="/images/lunge.ropt.jpg">
+    <link rel="prefetch" href="/images/lunge.sopt.jpg">
+    {{ partial "head" . }}
+</head>
 <body>
 <div class="content">
     {{ partial "top" (dict "content" . "linkUrl" "/about/" "linkName" "about" "phone" .Site.Params.phoneNumber) }}
