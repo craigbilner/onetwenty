@@ -1,8 +1,20 @@
+/* fonts */
+
+@font-face {
+    font-family: 'Roboto Regular';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-regular.woff2') format('woff2'),
+    url('../fonts/roboto-regular.woff') format('woff'),
+    url('../fonts/roboto-regular.ttf') format('truetype');
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: -apple-system,
+    font-family: "Roboto Regular",
+    -apple-system,
     BlinkMacSystemFont,
     "Segoe UI",
     Helvetica,
@@ -322,7 +334,7 @@ header {
 
     .logo-text {
         top: 40px;
-        left: 32px;
+        left: 26px;
     }
 
     .logo-one {

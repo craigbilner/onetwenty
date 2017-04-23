@@ -1,4 +1,4 @@
-const VERSION = 'V6';
+const VERSION = 'V7';
 
 const ASSETS = [
   '/images/hand-stands.opt.jpg',
@@ -15,6 +15,9 @@ const ASSETS = [
   '/images/simon.sopt.jpg',
   '/images/claire.opt.jpg',
   '/images/claire.sopt.jpg',
+  '/fonts/roboto-regular.woff2',
+  '/fonts/roboto-regular.woff',
+  '/fonts/roboto-regular.ttf',
 ];
 
 this.addEventListener('install', function(event) {

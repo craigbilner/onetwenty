@@ -1,3 +1,6 @@
+<link rel="preload" href="/fonts/roboto-regular.woff2" as="font">
+<link rel="preload" href="/fonts/roboto-regular.woff" as="font">
+<link rel="preload" href="/fonts/roboto-regular.ttf" as="font">
 {{ range $key, $value := .Site.Data.manifestcss }}
     <link rel="preload" as="style" href="/css/dist/{{ $value }}" onload="this.rel='stylesheet'">
 {{ end }}
