@@ -220,7 +220,7 @@
 .logo-text {
     position: absolute;
     top: 30px;
-    left: 22px;
+    left: 18px;
 }
 
 .logo-one {
@@ -234,7 +234,7 @@
 
 .logo-desc {
     position: absolute;
-    bottom: 0;
+    top: 62px;
     left: 110px;
 }
 
