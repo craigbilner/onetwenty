@@ -23,7 +23,7 @@
   }
 
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/sw.js', {
+    navigator.serviceWorker.register('/sw.v2.js', {
       scope: '/',
     })
       .then(() => console.info(`Registration succeeded.`))
