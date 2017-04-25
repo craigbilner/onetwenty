@@ -3,7 +3,7 @@
     <link rel="stylesheet" href="/css/dist/{{ $value }}">
     {{ end }}
 </noscript>
-<script>
+<script type="text/javascript">
   var loadDeferredStyles = function() {
     var addStylesNode = document.getElementById('deferred-styles');
     var replacement = document.createElement('div');
@@ -26,7 +26,11 @@
     navigator.serviceWorker.register('/sw.v2.js', {
       scope: '/',
     })
-      .then(() => console.info(`Registration succeeded.`))
-      .catch(error => console.error(`Registration failed with ${error}`));
+      .then(function() {
+        console.info('Registration succeeded.');
+      })
+      .catch(function(error) {
+        console.error('Registration failed with ' + error);
+      });
   }
 </script>

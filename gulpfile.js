@@ -41,7 +41,10 @@ gulp.task('make-skeletons', () =>
 
 gulp.task('minify-html', function() {
   return gulp.src(`public/**/*.html`, { base: './' })
-    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(htmlmin({
+      collapseWhitespace: true,
+      minifyJS: true,
+    }))
     .pipe(gulp.dest('./'));
 });
 
